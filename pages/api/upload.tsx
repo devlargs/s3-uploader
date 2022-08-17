@@ -9,8 +9,8 @@ dotenv.config();
 
 const region = 'us-east-1';
 const bucketName = 'largs-movie-database';
-const accessKeyId = process.env.AWS_ACCESS_KEY_ID;
-const secretAccessKey = process.env.AWS_SECRET_ACCESS_KEY;
+const accessKeyId = process.env.S3_AWS_ACCESS_KEY_ID;
+const secretAccessKey = process.env.S3_AWS_SECRET_ACCESS_KEY;
 
 const s3 = new aws.S3({
   region,
